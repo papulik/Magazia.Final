@@ -13,6 +13,15 @@
 		6040D8E129CB097300884451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6040D8DF29CB097300884451 /* Main.storyboard */; };
 		6040D8E329CB097400884451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6040D8E229CB097400884451 /* Assets.xcassets */; };
 		6040D8E629CB097400884451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6040D8E429CB097400884451 /* LaunchScreen.storyboard */; };
+		6040D8F129CB4F8800884451 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040D8F029CB4F8800884451 /* ProductsViewController.swift */; };
+		6040D8F329CB50CA00884451 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040D8F229CB50CA00884451 /* Account.swift */; };
+		6040D90129CBB56200884451 /* ViewButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6040D90029CBB56200884451 /* ViewButtons.swift */; };
+		6075B72029D5BD6500F8DBE4 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075B71F29D5BD6500F8DBE4 /* CartViewController.swift */; };
+		6075B72229D5C7B400F8DBE4 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075B72129D5C7B400F8DBE4 /* CartTableViewCell.swift */; };
+		6075B72829D750C300F8DBE4 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6075B72729D750C300F8DBE4 /* PaymentViewController.swift */; };
+		60DD46A529CBB84200058A9E /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60DD46A429CBB84200058A9E /* View.xib */; };
+		60DD46A729CBBEAC00058A9E /* TableViewCellMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A629CBBEAC00058A9E /* TableViewCellMain.swift */; };
+		60DD46A929CF1ED200058A9E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60DD46A829CF1ED200058A9E /* Product.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		6040D8E229CB097400884451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6040D8E529CB097400884451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6040D8E729CB097400884451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6040D8F029CB4F8800884451 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		6040D8F229CB50CA00884451 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		6040D90029CBB56200884451 /* ViewButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewButtons.swift; sourceTree = "<group>"; };
+		6075B71F29D5BD6500F8DBE4 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		6075B72129D5C7B400F8DBE4 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		6075B72729D750C300F8DBE4 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		60DD46A429CBB84200058A9E /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		60DD46A629CBBEAC00058A9E /* TableViewCellMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellMain.swift; sourceTree = "<group>"; };
+		60DD46A829CF1ED200058A9E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +76,54 @@
 			children = (
 				6040D8D929CB097300884451 /* AppDelegate.swift */,
 				6040D8DB29CB097300884451 /* SceneDelegate.swift */,
-				6040D8DD29CB097300884451 /* ViewController.swift */,
-				6040D8DF29CB097300884451 /* Main.storyboard */,
+				6040D90029CBB56200884451 /* ViewButtons.swift */,
+				6040D8EF29CB18D300884451 /* Model */,
+				6040D8EE29CB18BE00884451 /* View */,
+				6040D8ED29CB188900884451 /* Controller */,
+				6075B72929DAEDF900F8DBE4 /* Cells */,
 				6040D8E229CB097400884451 /* Assets.xcassets */,
 				6040D8E429CB097400884451 /* LaunchScreen.storyboard */,
 				6040D8E729CB097400884451 /* Info.plist */,
 			);
 			path = Magazia.Final;
+			sourceTree = "<group>";
+		};
+		6040D8ED29CB188900884451 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6040D8DF29CB097300884451 /* Main.storyboard */,
+				60DD46A429CBB84200058A9E /* View.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6040D8EE29CB18BE00884451 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6040D8DD29CB097300884451 /* ViewController.swift */,
+				6040D8F029CB4F8800884451 /* ProductsViewController.swift */,
+				6075B71F29D5BD6500F8DBE4 /* CartViewController.swift */,
+				6075B72729D750C300F8DBE4 /* PaymentViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6040D8EF29CB18D300884451 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60DD46A829CF1ED200058A9E /* Product.swift */,
+				6040D8F229CB50CA00884451 /* Account.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6075B72929DAEDF900F8DBE4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				60DD46A629CBBEAC00058A9E /* TableViewCellMain.swift */,
+				6075B72129D5C7B400F8DBE4 /* CartTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60DD46A529CBB84200058A9E /* View.xib in Resources */,
 				6040D8E629CB097400884451 /* LaunchScreen.storyboard in Resources */,
 				6040D8E329CB097400884451 /* Assets.xcassets in Resources */,
 				6040D8E129CB097300884451 /* Main.storyboard in Resources */,
@@ -138,9 +198,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6040D90129CBB56200884451 /* ViewButtons.swift in Sources */,
+				60DD46A929CF1ED200058A9E /* Product.swift in Sources */,
+				6040D8F329CB50CA00884451 /* Account.swift in Sources */,
 				6040D8DE29CB097300884451 /* ViewController.swift in Sources */,
 				6040D8DA29CB097300884451 /* AppDelegate.swift in Sources */,
+				6040D8F129CB4F8800884451 /* ProductsViewController.swift in Sources */,
 				6040D8DC29CB097300884451 /* SceneDelegate.swift in Sources */,
+				6075B72829D750C300F8DBE4 /* PaymentViewController.swift in Sources */,
+				6075B72229D5C7B400F8DBE4 /* CartTableViewCell.swift in Sources */,
+				6075B72029D5BD6500F8DBE4 /* CartViewController.swift in Sources */,
+				60DD46A729CBBEAC00058A9E /* TableViewCellMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,8 +361,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +389,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
